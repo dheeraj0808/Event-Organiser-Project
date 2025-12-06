@@ -5,13 +5,19 @@ import Crousal from './component/Crousal/Crousal'
 import Map from './component/Map/Map.jsx'
 import About from './component/About Us/About.jsx'
 import Why from './component/Why Us/Why.jsx'
+import Services from './component/Services/Services.jsx'
+import Gallery from './component/Gallery/Gallery.jsx'
+import Testimonial from './component/Testimonial/Testimonial.jsx'
 const layout = () => {
     return (
         <>
             <Header />
             <Crousal />
             <About />
+            <Services />
             <Why />
+            <Gallery/>
+            <Testimonial/>
             <Map />
             <Footer />
         </>
