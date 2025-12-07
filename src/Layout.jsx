@@ -8,16 +8,19 @@ import Why from './component/Why Us/Why.jsx'
 import Services from './component/Services/Services.jsx'
 import Gallery from './component/Gallery/Gallery.jsx'
 import Testimonial from './component/Testimonial/Testimonial.jsx'
+import Slider from './component/Slider/slider.jsx'
+
 const layout = () => {
     return (
         <>
             <Header />
             <Crousal />
             <About />
+            <Slider />
             <Services />
             <Why />
-            <Gallery/>
-            <Testimonial/>
+            <Gallery />
+            <Testimonial />
             <Map />
             <Footer />
         </>

@@ -4,7 +4,10 @@
     box-sizing: border-box;
     display: flex;
     justify-content: center;
-    background: #0a1422;
+    /* premium but subtle: between testimonial and gallery */
+    background:
+        radial-gradient(circle at top left, rgba(245, 195, 75, 0.04) 0, transparent 55%),
+        #06192f;
     color: #e8eef5;
 }
 

@@ -1,0 +1,122 @@
+.brand-strip {
+    width: 100%;
+    padding: 18px 0 22px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    /* very subtle bar – fits between about / services */
+    background: #030814;
+    color: #e8eef5;
+}
+
+.brand-strip__inner {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 24px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+
+.brand-strip__eyebrow {
+    margin: 0;
+    font-size: 0.8rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #9fa9c6;
+    opacity: 0.9;
+}
+
+/* viewport for scrolling row */
+.brand-strip__mask {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 4px 0;
+}
+
+/* the scrolling row */
+.brand-strip__row {
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+    white-space: nowrap;
+    animation: brand-strip-marquee 28s linear infinite;
+}
+
+/* pill-style brand tags */
+.brand-strip__pill {
+    flex: 0 0 auto;
+    padding: 6px 18px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    background: rgba(9, 18, 36, 0.9);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.45);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease,
+        background 0.2s ease;
+}
+
+.brand-strip__text {
+    font-size: 0.8rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #f7f9ff;
+    opacity: 0.9;
+}
+
+.brand-strip__pill:hover {
+    transform: translateY(-2px);
+    border-color: rgba(245, 195, 75, 0.7);
+    background: rgba(13, 27, 52, 0.95);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.6);
+}
+
+/* marquee animation */
+@keyframes brand-strip-marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* mobile tweaks */
+@media (max-width: 640px) {
+    .brand-strip {
+        padding: 14px 0 18px;
+    }
+
+    .brand-strip__inner {
+        padding: 0 16px;
+        gap: 6px;
+    }
+
+    .brand-strip__eyebrow {
+        font-size: 0.72rem;
+        letter-spacing: 0.16em;
+    }
+
+    .brand-strip__row {
+        gap: 14px;
+        animation-duration: 24s;
+    }
+
+    .brand-strip__pill {
+        padding: 5px 14px;
+    }
+
+    .brand-strip__text {
+        font-size: 0.74rem;
+        letter-spacing: 0.14em;
+    }
+}
