@@ -1,12 +1,13 @@
 import React from 'react'
 import './Gallery.css'
+import img3 from '../../assets/3.jpg';
+import imgHoli from '../../assets/people-celebrating-holi-festival-colorful-powder (1).jpg';
 
 const galleryItems = [
   {
     title: 'Grand Wedding Reception',
     location: 'Jaipur Palace',
-    image:
-      'https://images.unsplash.com/photo-1529636447262-2f8ccc8e087b?auto=format&fit=crop&w=1200&q=80',
+    image: img3,
   },
   {
     title: 'Corporate Leadership Summit',
@@ -29,8 +30,7 @@ const galleryItems = [
   {
     title: 'Cultural Performance Evening',
     location: 'City Auditorium',
-    image:
-      'https://images.unsplash.com/photo-1515165562835-c4c9e0737eaa?auto=format&fit=crop&w=1200&q=80',
+    image: imgHoli,
   },
   {
     title: 'Fashion & Lifestyle Showcase',

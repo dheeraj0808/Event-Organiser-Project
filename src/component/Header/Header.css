@@ -5,13 +5,19 @@
   right: 0;
   height: 68px;
   padding: 0 24px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  box-sizing: border-box;
   background: #0d1b2a;
   color: #fff;
   z-index: 1000;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* main row: brand left, right side (nav + contact + toggle) */
+.header__main-row {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header__brand {
@@ -19,6 +25,13 @@
   font-weight: 700;
 }
 
+.header__right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* desktop nav: same as original */
 .header__nav {
   display: flex;
   align-items: center;
@@ -47,9 +60,105 @@
   padding: 10px 14px;
   border-radius: 8px;
   transition: transform 0.15s ease, box-shadow 0.15s ease;
+  white-space: nowrap;
 }
 
 .header__btn:hover {
   transform: translateY(-1px);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+/* hamburger toggle – hidden on desktop */
+.header__toggle {
+  display: none;
+  width: 32px;
+  height: 28px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  background: rgba(6, 16, 30, 0.9);
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.header__toggle-line {
+  width: 16px;
+  height: 2px;
+  background: #f7f9ff;
+  border-radius: 999px;
+  display: block;
+}
+
+.header__toggle-line+.header__toggle-line {
+  margin-top: 5px;
+}
+
+/* ---------- mobile / small screens ---------- */
+@media (max-width: 768px) {
+  .header {
+    /* keep same height as desktop */
+    height: 68px;
+    padding: 0 16px;
+  }
+
+  .header__brand {
+    font-size: 1.1rem;
+  }
+
+  .header__toggle {
+    display: inline-flex;
+  }
+
+  /* right side: contact + toggle; nav becomes dropdown below */
+  .header__right {
+    gap: 10px;
+  }
+
+  /* dropdown nav below header */
+  .header__nav {
+    position: absolute;
+    top: 68px;
+    /* exactly header height */
+    left: 0;
+    right: 0;
+    padding: 8px 16px 10px;
+    box-sizing: border-box;
+    background: #0d1b2a;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .header__nav--open {
+    display: flex;
+  }
+
+  .header__link {
+    width: 100%;
+    padding: 6px 4px;
+    font-size: 0.88rem;
+  }
+
+  /* Contact Us stays in top bar; only size changes */
+  .header__btn {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+  }
+}
+
+/* optional: constrain width on large screens */
+@media (min-width: 1200px) {
+  .header {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .header__main-row {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }
