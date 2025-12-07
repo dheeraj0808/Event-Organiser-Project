@@ -9,6 +9,7 @@
         radial-gradient(circle at top left, rgba(245, 195, 75, 0.05) 0, transparent 55%),
         #05162a;
     color: #e8eef5;
+    scroll-margin-top: 68px;
 }
 
 .gallery__inner {

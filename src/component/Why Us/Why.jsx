@@ -10,7 +10,7 @@ const Why = () => {
     ];
 
     return (
-        <section className="why">
+        <section className="why" id="why">
             <div className="why__inner">
                 <div className="why__header">
                     <p className="why__eyebrow">Why Choose Us</p>

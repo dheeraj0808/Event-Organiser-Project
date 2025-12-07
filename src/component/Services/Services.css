@@ -9,6 +9,7 @@
         radial-gradient(circle at top left, rgba(245, 195, 75, 0.04) 0, transparent 55%),
         #06192f;
     color: #e8eef5;
+    scroll-margin-top: 68px;
 }
 
 .services__inner {

@@ -6,6 +6,7 @@
     justify-content: center;
     background: #041122;
     color: #e8eef5;
+    scroll-margin-top: 68px;
 }
 
 .testimonial__inner {

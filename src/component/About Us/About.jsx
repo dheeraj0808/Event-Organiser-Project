@@ -3,7 +3,7 @@ import './about.css';
 
 const About = () => {
   return (
-    <section className="about">
+    <section className="about" id="about">
       <div className="about__inner">
         <div className="about__text">
           <p className="about__eyebrow">About Us</p>
@@ -33,6 +33,7 @@ const About = () => {
             <span>Vendor & logistics</span>
           </div>
         </div>
+
         <div className="about__card">
           <div className="about__badge">Premium Event Partner</div>
           <p>

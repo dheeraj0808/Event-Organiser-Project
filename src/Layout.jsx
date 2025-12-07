@@ -9,6 +9,7 @@ import Services from './component/Services/Services.jsx'
 import Gallery from './component/Gallery/Gallery.jsx'
 import Testimonial from './component/Testimonial/Testimonial.jsx'
 import Slider from './component/Slider/slider.jsx'
+import Cta from './component/CTA/Cta.jsx'
 
 const layout = () => {
     return (
@@ -20,6 +21,7 @@ const layout = () => {
             <Services />
             <Why />
             <Gallery />
+            <Cta />
             <Testimonial />
             <Map />
             <Footer />

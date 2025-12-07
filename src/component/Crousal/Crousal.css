@@ -8,11 +8,12 @@
     /* add any gap you want */
     width: 100vw;
     margin-left: calc(-1 * (50vw - 50%));
-    height: 70vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     gap: 12px;
     position: relative;
+    scroll-margin-top: 68px;
 }
 
 .crousal__frame {
@@ -85,4 +86,16 @@
 .dot.active {
     background: #f5c34b;
     transform: scale(1.2);
+}
+
+@media (max-width: 640px) {
+    .crousal {
+        height: 55vh;
+    }
+
+    .crousal__controls button {
+        width: 36px;
+        height: 36px;
+        font-size: 18px;
+    }
 }
