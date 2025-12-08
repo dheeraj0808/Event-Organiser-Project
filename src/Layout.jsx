@@ -8,7 +8,7 @@ import Why from './component/Why Us/Why.jsx'
 import Services from './component/Services/Services.jsx'
 import Gallery from './component/Gallery/Gallery.jsx'
 import Testimonial from './component/Testimonial/Testimonial.jsx'
-import Slider from './component/Slider/slider.jsx'
+import Slider from './component/Slider/Slider.jsx'
 import Cta from './component/CTA/Cta.jsx'
 
 const layout = () => {
