@@ -52,7 +52,7 @@ const Cta = () => {
                     a personalised call.
                 </p>
 
-                <form className="cta__form" onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit} className="cta__form">
                     <div className="cta__field">
                         <input
                             type="text"
@@ -108,6 +108,17 @@ const Cta = () => {
                         Calculate Now
                     </button>
                 </form>
+
+                <div className="cta__whatsapp-line">
+                    <a
+                        href="https://wa.me/918887088870?text=Hi%2C%20I%20would%20like%20to%20chat%20about%20my%20event%20budget%20and%20planning"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="cta__whatsapp-link"
+                    >
+                        Chat on WhatsApp
+                    </a>
+                </div>
 
                 {estimate && <p className="cta__estimate">{estimate}</p>}
             </div>

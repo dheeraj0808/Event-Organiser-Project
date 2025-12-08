@@ -45,6 +45,8 @@ const services = [
 ];
 
 const Services = () => {
+    const whatsappNumber = '918887088870'; // country code + number
+
     return (
         <section className="services" id="services">
             <div className="services__inner">
@@ -64,7 +66,16 @@ const Services = () => {
                             </div>
                             <h3>{item.title}</h3>
                             <p>{item.desc}</p>
-                            <button type="button">Enquire Now</button>
+                            <button
+                                type="button"
+                                onClick={() => {
+                                    const msg = `Hi, I am interested in the ${item.title} service. Can you share more details?`;
+                                    const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(msg)}`;
+                                    window.open(url, '_blank');
+                                }}
+                            >
+                                Enquire Now
+                            </button>
                         </div>
                     ))}
                 </div>

@@ -10,6 +10,38 @@
     scroll-margin-top: 68px;
 }
 
+.cta__whatsapp-line {
+    margin-top: 12px;
+    padding-top: 10px;
+    text-align: center;
+    border-top: 1px dashed rgba(255, 255, 255, 0.12);
+}
+
+.cta__whatsapp-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 50px;
+    border-radius: 999px;
+    border: 1px solid rgba(37, 211, 102, 0.6);
+    font-size: 0.95rem;
+    color: #25d366;
+    text-decoration: none;
+    font-weight: 500;
+    background: rgba(5, 13, 26, 0.9);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.45);
+    transition: background 0.15s ease, color 0.15s ease, box-shadow 0.15s ease,
+        transform 0.15s ease, border-color 0.15s ease;
+}
+
+.cta__whatsapp-link:hover {
+    background: #25d366;
+    color: #04101f;
+    border-color: #25d366;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
+}
+
 .cta__inner {
     width: 100%;
     max-width: 1120px;
